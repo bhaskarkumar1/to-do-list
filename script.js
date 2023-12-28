@@ -11,7 +11,12 @@ function myfunc(ls){
     // console.log("I got clcick")
     let ip=document.getElementById("input").value
     // console.log(ip)
-    ls.push(ip)
+    if (ip!=""){
+        ls.push(ip)
+        
+    
+    
+    
     // console.log(ls)
     let newdiv=document.createElement("div")
     newdiv.className="task"
@@ -27,10 +32,35 @@ function myfunc(ls){
 
     let icon=document.createElement("i")
     icon.className="fa-solid fa-xmark"
+    icon.id="cross"
 
     newdiv.appendChild(radio)
     newdiv.appendChild(para)
     newdiv.appendChild(icon)
 
     document.getElementById("task-container").appendChild(newdiv)
+
+    let reset=document.getElementById("input")
+    reset.value=""
+    // delete the parent element 
+    icon.addEventListener("click", function () {
+        // Get the parent element (task div) and remove it
+        // this.parentNode.remove();
+
+        // get the icon which was clicked
+        let clickedicon=this
+        // get the parent element of this icon 
+        let parentnode=clickedicon.parentNode;
+        // remove the parent node  
+        parentnode.remove()
+    });
+
+
+
+} 
 }
+
+
+
+    // Add a click event listener to the newly created cross icon
+  

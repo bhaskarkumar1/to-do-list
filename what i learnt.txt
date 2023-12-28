@@ -1,0 +1,14 @@
+I learnt how to get the current node and remove the parent node 
+
+    icon.addEventListener("click", function () {
+        // Get the parent element (task div) and remove it
+        // this.parentNode.remove();
+
+        // get the icon which was clicked
+        let clickedicon=this
+        // get the parent element of this icon 
+        let parentnode=clickedicon.parentNode;
+        // remove the parent node  
+        parentnode.remove()
+    });
+
