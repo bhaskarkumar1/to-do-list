@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-image: linear-gradient(150deg, rgb(24, 4, 98), rgb(83, 9, 96));
+
+}
+
+.mid{
+    /* border-radius:100px; */
+    margin: auto;
+    width: 30%;
+    margin-top: 12vh;
+    z-index: 100s;
+    
+}
+.content{
+    /* border-radius: 10px; */
+    /* padding-bottom:50% ; */
+}
+
+.inner{
+    background-color: #fff;
+    padding: 7%;
+    border-radius: 10px;
+}
+
+h1{
+    color: rgb(6, 51, 117);
+}
+
+.icon{
+    width: 7%;
+    height: 4%;
+}
+
+.button{
+    background-color: orangered;
+    color: #fff;
+    width: 25%;
+    height: 7%;
+    /* border: #fff; */
+    border-radius: 50px;
+    border: #fff;
+}
+
+.inputbox{
+    width: 70%;
+    height: 7%;
+    border-radius: 30px;
+    text-align:center;
+    padding: 5%;
+    margin-top: 5%;
+    font-size: 120%;
+
+
+}
+
+.task{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.task p{
+    margin-left: 10px;
+    width: 90%;
+    height: 1px;
+    padding-bottom:5%;
+
+}
+
+/* for small screen */
+@media screen and (max-width:767px) {
+    body{
+        /* background-image: linear-gradient(150deg, rgb(4, 98, 38), rgb(96, 73, 9)); */
+
+        }
+
+        .mid{
+            border-radius:50px;
+            margin: auto;
+            width: 90%;
+            margin-top: 7vh;
+            /* z-index: 100; */
+            margin-left: 5%;
+            background-color: #fff;
+            
+        }
+        .button{
+            width:30%;
+            height: 7%;
+            /* margin-left: -13%; */
+        }
+        .inner{
+            
+            /* padding: 4%; */
+            border-radius: 20px;
+        }
+        .inputbox{
+            width: 65%;
+            height: 7%;
+            margin-top: 4%;
+
+        }
+        .icon{
+            width: 7.5%;
+            height: 3.5%;
+        }
+
+        .task{
+            /* height: 10%; */
+            margin-top: 5%;
+            padding-bottom: 0;
+
+        }
+
+        .task p{
+            margin-left: -20%;
+            width: 60%;
+            height: 1%;
+            padding-top:3%;
+
+        }
+
+        .cross{
+            /* margin-top: 5rem; */
+        }
+}
